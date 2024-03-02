@@ -225,11 +225,7 @@ $ git clone https://github.com/rcemper/DK_Tutorial-WebSockets.git
 ```
 Open the terminal in this directory and run:
 ```
-$ docker-compose build
-```
-Run IRIS container with your project:
-```
-$ docker-compose up -d
+$ docker-compose up -d && docker-compose logs -f
 ```
 Test from docker console
 ```
