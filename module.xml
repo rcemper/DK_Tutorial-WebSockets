@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="wsock-tutorial.ZPM">
+    <Module>
+      <Name>wsock-tutorial</Name>
+      <Version>0.0.1</Version>
+      <Description>Tutorial On WebSockets</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="Chat.PKG"/>
+    </Module>
+  </Document>
+</Export>

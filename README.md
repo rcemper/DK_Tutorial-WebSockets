@@ -213,4 +213,35 @@ ClassMethod SendData(data As %DynamicObject)
 
 ## Conclusion
 
-This chat application demonstrates how to establish WebSocket connections between a client and server hosted by InterSystems IRIS. For continue reading on the protocol and its implementation in InterSystems IRIS, take a look at the links in the introduction. 
+This chat application demonstrates how to establish WebSocket connections between a client and server hosted by InterSystems IRIS. For continue reading on the protocol and its implementation in InterSystems IRIS, take a look at the links in the introduction.     
+
+# DOCKER Support
+### Prerequisites   
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.    
+### Installation    
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/DK_Tutorial-WebSockets.git
+```
+Open the terminal in this directory and run:
+```
+$ docker-compose build
+```
+Run IRIS container with your project:
+```
+$ docker-compose up -d
+```
+Test from docker console
+```
+$ docker-compose exec iris1 iris session iris
+USER>
+```
+or using **WebTerminal**
+```
+http://localhost:42773/terminal/
+```
+for the Chat demo open http://localhost:42773/csp/user/ChatClient.csp    
+and identify yourself with "**alias** hero-of-tutorial"  and <SEND> button   
+
+
+
